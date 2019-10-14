@@ -20,8 +20,7 @@ export class ApiService {
 
 LANG = window.localStorage.getItem('lang');
 
- //BASE_URL = 'http://192.168.43.15:8000/api/' + this.LANG + '/v1/';
-BASE_URL = 'https://bnr-services-api-staging.herokuapp.com/api/' + this.LANG + '/v1/';
+BASE_URL = 'https://services-api.herokuapp.com/api/' + this.LANG + '/v1/';
 
   constructor(private http: HttpClient) {
     if (window.localStorage.getItem("profile")) {
@@ -67,8 +66,7 @@ BASE_URL = 'https://bnr-services-api-staging.herokuapp.com/api/' + this.LANG + '
       window.localStorage.setItem('lang', 'en');
     }
 
-  //this.BASE_URL = 'http://192.168.43.15:8000/api/' + this.LANG + '/v1/';
-  this.BASE_URL = 'https://bnr-services-api-staging.herokuapp.com/api/' + this.LANG + '/v1/';
+  this.BASE_URL = 'https://services-api.herokuapp.com/api/' + this.LANG + '/v1/';
   }
 
 
